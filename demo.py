@@ -1,2 +1,4 @@
-print("hello")
-print("teena")
+def chai(n):
+    print(n)
+
+chai(4)
