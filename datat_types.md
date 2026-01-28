@@ -1,0 +1,11 @@
+# data types/object types
+- numbers->1234,3.14, 2+2j, ob111, decimal(), fraction()
+- string -> 'spam, "bob's",
+- List ->  [1,2,3,[22,33,]]
+- Tuple -> ('1',"spam',8, 'U')
+- Dictionary -> { 'foof':22",'Tste': 33}
+- sets : unique items
+- File : open('demo.text'),open()
+- None: None
+- Function, modules , classes
+- advance : Dectoraters , generators , Iterators , MetaProgramming
