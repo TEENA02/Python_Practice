@@ -16,4 +16,5 @@ for t in tea:
 if "milk tea" in tea:
     print("\nmilk tea is present")
 
-
+nums=[x**2 for x in range(7)]
+print(nums)  # [1, 4, 9, 16, 25
