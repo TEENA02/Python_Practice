@@ -28,3 +28,24 @@ del thisdisc["model"]
 print(thisdisc)
 cardetails=thisdisc.copy()
 print(cardetails)
+
+# dictionar in a dictionary
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },                       
+
+    "child2" : {   
+    "name" : "Tobias",
+    "year" : 2007
+  },
+}
+print(myfamily["child1"])
+print(myfamily["child1"]["name"])
+
+# keys in differnt list
+keys=["brand","model","year"]
+values=["Ford","Mustang",1964]
+new_dict=dict.fromkeys(keys,values)
+# {'brand': ['Ford', 'Mustang', 1964], 'model': ['Ford', 'Mustang', 1964], 'year': ['Ford', 'Mustang', 1964]}
