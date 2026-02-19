@@ -1,13 +1,21 @@
 class Car:
+    total_cars=0
     def __init__(self, Brand, Model):
         self.Brand = Brand
         self.Model = Model
+        Car.total_cars += 1
     def display(self):
         print("Brand:", self.Brand)
         print("Model:", self.Model)
-
+    def speed_calculate(self, speed):
+        return f"The speed of the {self.Brand} {self.Model} is {speed} km/h"
+    
 car1=Car("hunda", "civic")
-car1.display()
+car2=Car("toyota", "corolla")
+car3=Car("ford", "mustang")
+print(car2.total_cars)
+print(Car.total_cars)
+
 
 # inheritance
 class ElectricCar(Car):
@@ -17,6 +25,8 @@ class ElectricCar(Car):
     def display(self):
         super().display()
         print("Battery Size:", self.BatterySize)
+    def speed_calculate(self, speed):
+        return f"The speed of the {self.Brand} {self.Model} is {speed} km/h"
 ElectricCar1=ElectricCar("tesla","xqwe",100
                          )
 ElectricCar1.display()
@@ -42,3 +52,15 @@ my_perfume.display_details()
 
 # polymorphism-olymorphism allows same method, function or operator
 # to behave differently depending on object it is working with
+# static method -method defined inside a class 
+# that does not depend on any instance or class data.
+class cal:
+    @staticmethod
+    def mul(a,b):
+        return a*b
+
+print(cal.mul(100,34))
+
+# property decorator - allows us to define methods 
+# that can be accessed like attributes
+
